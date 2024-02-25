@@ -18,7 +18,7 @@
                 <div class="container">
                     <div class="picture-resume-wrapper">
                 <div class="picture-resume">
-                <span><img src="https://gravatar.com/avatar/3442dc3c2ed4a3789becedf6c336c7ba?d=https%3A%2F%2Fassets.codepen.io%2Finternal%2Favatars%2Fusers%2Fdefault.png&fit=crop&format=auto&height=80&version=0&width=80" alt="" /></span>
+                <span><img src="photo.png" alt="perso photo" /></span>
                 <svg version="1.1" viewBox="0 0 350 350">
         
         <defs>
@@ -51,7 +51,7 @@
                 <div class="clearfix"></div>
         </div>
             <div class="name-wrapper">
-                <h1>Andrieu <br/>Mickaël</h1><!-- YOUR NAME AND LAST NAME  -->
+                <h1>Buchelet <br/>Loris</h1><!-- YOUR NAME AND LAST NAME  -->
             </div>
             <div class="clearfix"></div>
             <div class="contact-info clearfix">
@@ -62,25 +62,23 @@
                     <li>Home</li>
                 </ul>
                 <ul class="list-content ">
-                    <li>06 07 05 94 59</li> <!-- YOUR PHONE NUMBER  -->
-                    <li>mickael.andrieu@exemple.com</li> <!-- YOUR EMAIL -->
-                    <li><a href="http://www.mickael-andrieu.com/">mickael-andrieu.com</a></li> <!-- YOUR WEBSITE  -->
-                    <li>Bordeaux, France</li> <!-- YOUR STATE AND COUNTRY  -->
+                    <li>06 79 06 02 45</li> <!-- YOUR PHONE NUMBER  -->
+                    <li>loris.buchelet@gmail.com</li> <!-- YOUR EMAIL -->
+                    <li><a href="#">à venir</a></li> <!-- YOUR WEBSITE  -->
+                    <li>Floringhem, France</li> <!-- YOUR STATE AND COUNTRY  -->
                 </ul>
             </div>
             <div class="contact-presentation"> <!-- YOUR PRESENTATION RESUME  -->
-                <p>Je suis formateur web &amp; data et passionné par la qualité web.</p>
+                <p>Professeur d'anglais en reconversion &amp; en formation Développeur Flutter.</p>
             </div>
             <div class="contact-social clearfix">
                 <ul class="list-titles">
-                    <li>Twitter</li>
-                    <li>Dribbble</li>
-                    <li>Codepen</li>
+                    <li>GitHub</li>
+                    <li>LinkedIn</li>
                 </ul>
                 <ul class="list-content"> <!-- REMEMBER TO PUT THE URL ON THE HREF TAG  -->
-                    <li><a href="">Compte Twitter</a></li> <!-- YOUR TWITTER USER  -->
-                    <li><a href="">Compte Dribbble</a></li> <!-- YOUR DRIBBBLE USER  -->
-                    <li><a href="">Compte Codepen</a></li> <!-- YOUR CODEPEN USER  -->
+                    <li><a href="">Compte Git Hub</a></li> <!-- YOUR TWITTER USER  -->
+                    <li><a href="">Compte LinkedIn</a></li> <!-- YOUR DRIBBBLE USER  -->
                 </ul>
             </div>
             <br/>
@@ -160,22 +158,19 @@
                         <li class="skill-percentage">HTML / HTML5</li>
                         <li class="skill-percentage">CSS / CSS3 / BOOTSTRAP</li>
                         <li class="skill-percentage">Javascript</li>
-                        <li class="skill-percentage">Jquery</li>
-                        <li class="skill-percentage">AngularJS</li>
                         <li class="skill-percentage">Photoshop</li>
                         <li class="skill-percentage">BASIC PHP</li>
                         <li class="skill-percentage">BASIC MYSQL</li>
                         <li class="skill-percentage">BASIC LINUX</li>
                         <li class="skill-percentage">GIT/GITHUB</li>
-                        <li class="skill-percentage">GULP/GRUNT</li>
                     </ul>  
             </div>
             
             <div class="section-wrapper clearfix">
                 <h3 class="section-title">Hobbies</h3>  <!-- DESCRIPTION OF YOUR HOBBIES -->
-                <p>Etc</p>
+                <p>Learning new languages</p>
                 
-                <p>Etc</p> 
+                <p>Cooking</p> 
             </div>
             
             </div>
