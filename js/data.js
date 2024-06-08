@@ -23,10 +23,10 @@ const titles = [
     ],
 
     ['h2Intro', 
-    `Welcome to my personal page where you'll find my skills, project and resume.<br>
-    Check my github, LinkedIn Page and feel free to send me an e-mail`, 
-    `Bienvenue sur ma page personnelle : retrouvez mes compétences, projets et mon CV.<br>
-    Accédez à mon github, ma page LinkedIn et contactez-moi par e-mail.`
+    `Welcome to my personal page where you'll find my skills, project and resume.
+    Check my github, LinkedIn Page and feel free to  <a href="mailto:loris.buchelet@gmail.com">send me an e-mail</a>.`, 
+    `Bienvenue sur ma page personnelle : retrouvez mes compétences, projets et mon CV.
+    Accédez à mon github, ma page LinkedIn et  <a href="mailto:loris.buchelet@gmail.com">contactez-moi par mail</a>.`
     ],
 
     ['h2Skills',
