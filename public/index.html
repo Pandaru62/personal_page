@@ -55,8 +55,8 @@
                         <h1 class="fw-bold" id="h1Intro">I'm Loris Buchelet, former English teacher and Web Developer in training.</h1>
                         <h2 class="fw-light" id="h2Intro">Welcome to my personal page where you'll find my skills, project and resume.<br>
                         Check my github, LinkedIn Page and feel free to send me an e-mail.</h2>
-                        <a class="btn btn-primary mt-3" href="#skills"><span id="webSkills">My web skills</span></a><br>
-                        <a class="btn btn-outline-primary mt-3 disabled" href="#"><span id="readBio">Read my bio</span></a>
+                        <a class="btn btn-primary mt-3" href="#skills"><span class="webSkills">My web skills</span></a><br>
+                        <a class="btn btn-outline-primary mt-3 disabled" href="#"><span class="readBio">Read my bio</span></a>
 
                     </div>
 
@@ -231,9 +231,9 @@
                                         <p class="card-text">This project, designed for my Study graduate developer training, implements a zoo website with a login access to zoo employees.</p>
                                     <div class="my-2 d-flex align-items-center justify-content-around">
                                         <a class="btn btn-outline-primary" data-bs-toggle="offcanvas" data-bs-target="#projectArcadiaInfo"
-                                        aria-controls="projectArcadiaInfo"><span id="submitForm">Find out more</span></a>
+                                        aria-controls="projectArcadiaInfo"><span class="findMore">Find out more</span></a>
                                         <a class="btn btn-primary" href="https://github.com/Pandaru62/studi-arcadia.git"><i class="bi bi-github"></i> GitHub</a>
-                                        <a class="btn btn-primary" href="https://studi-arcadia-24b07c2af798.herokuapp.com/"><i class="bi bi-eye-fill"></i> <span id="visitWebsite">Visit website</span></a>
+                                        <a class="btn btn-primary" href="https://studi-arcadia-24b07c2af798.herokuapp.com/"><i class="bi bi-eye-fill"></i> <span class="visitWebsite">Visit website</span></a>
                                     </div>
                             </div>
                             <div class="offcanvas offcanvas-bottom h-100" tabindex="-1" id="projectArcadiaInfo"
@@ -276,7 +276,7 @@
                                     <p class="card-text">This project, designed for my Study graduate developer training, implements a system for teachers to add and access students' skills.</p>
                                 <div class="my-2 d-flex align-items-center justify-content-around">
                                     <button disabled class="btn btn-outline-primary" data-bs-toggle="offcanvas" data-bs-target="#projectArcadiaInfo"
-                                    aria-controls="projectArcadiaInfo">Find out more</button>
+                                    aria-controls="projectArcadiaInfo"><span class="findMore">Find out more</span></button>
                                     <button disabled class="btn btn-primary"><i class="bi bi-github"></i> GitHub</button>
                                     <button disabled class="btn btn-primary"><i class="bi bi-eye-fill"></i> Visit website</button>
                                 </div>
@@ -317,7 +317,7 @@
                                     <p class="card-text">This project, designed for my Study graduate developer training, implements a checking list for Shiny Pokemon hunters.</p>
                                 <div class="my-2 d-flex align-items-center justify-content-around">
                                     <button disabled class="btn btn-outline-primary" data-bs-toggle="offcanvas" data-bs-target="#projectArcadiaInfo"
-                                    aria-controls="projectArcadiaInfo">Find out more</button>
+                                    aria-controls="projectArcadiaInfo"><span class="findMore">Find out more</span></button>
                                     <button disabled class="btn btn-primary"><i class="bi bi-github"></i> GitHub</button>
                                     <button disabled class="btn btn-primary"><i class="bi bi-eye-fill"></i> Visit website</button>
                                 </div>
@@ -349,37 +349,15 @@
         <section class="py-5 bg-light" id="contact">
             <div class="container">
                 <h2 class="mb-0" id="h2Contact">Do you want to have a chat?</h2>
-                <h3 class="fw-light fs-5" id="h3Contact">Fill in this form or <a href="mailto:loris.buchelet@gmail.com">send me an e-mail</a>.</h3>
+                <h3 class="fw-light fs-5" id="h3Contact"><a href="mailto:loris.buchelet@gmail.com">Send me an e-mail</a>.</h3>
 
                 <div class="row gy-4 mt-5">
-                    <div class="col-12 col-md-5">
-                        <img src="https://cdn.pixabay.com/photo/2018/02/18/21/30/coffee-3163596_1280.jpg" width="100%" alt="cup of coffee">
+                    <div class="col-12 col-md-8">
+                        <img src="https://cdn.pixabay.com/photo/2018/02/18/21/30/coffee-3163596_1280.jpg" width="80%" alt="cup of coffee">
                     </div>
-                    <div class="col-12 offset-md-1 col-md-6">
+                    <div class="col-12 offset-md-1 col-md-3 d-flex justify-content-center align-items-center">
 
-                        <form action="mailto:someone@example.com" method="post" enctype="text/plain">
-                            <div class="row">
-                                <div class="col-6 my-2">
-                                    <label for="firstNameInput" class="form-label">First name</label>
-                                    <input type="text" class="form-control" id="firstNameInput">
-                                </div>
-                                <div class="col-6 my-2">
-                                    <label for="lastNameInput" class="form-label">Last name</label>
-                                    <input type="text" class="form-control" id="lastNameInput">
-                                </div>
-                                <div class="col-12 my-2">
-                                    <label for="emailInput" class="form-label">Email address</label>
-                                    <input type="email" class="form-control" id="emailInput">
-                                </div>
-                                <div class="col-12 my-2">
-                                    <label for="descriptionInput" class="form-label">Message</label>
-                                    <textarea class="form-control" id="descriptionInput"></textarea>
-                                </div>
-                                <div class="col-12 my-2">
-                                    <button type="submit" class="btn btn-primary w-100"><span id="submitForm">Submit</span></button>
-                                </div>
-                            </div>
-                        </form>
+                        <a href="mailto:loris.buchelet@gmail.com" class="btn-lg btn-primary text-decoration-none"><i class="bi bi-envelope-fill"></i> <span class="emailSend">Send an e-mail</span></a>
 
                     </div>
                 </div>
@@ -405,9 +383,6 @@
                         </li>
                         <li class="list-inline-item">
                             <a target="_blank" href="https://github.com/Pandaru62" class="text-decoration-none text-dark"><i class="bi bi-github"></i></a>
-                        </li>
-                        <li target="_blank" class="list-inline-item">
-                            <a href="loris.buchelet@gmail.com" class="text-decoration-none text-dark"><i class="bi bi-envelope-at"></i></a>
                         </li>
                     </ul>
                 </div>

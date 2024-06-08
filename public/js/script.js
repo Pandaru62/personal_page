@@ -2,9 +2,10 @@
 // retrives the links from the navbar
 const menuTitle = document.querySelector("#dynamicMenu");
 
-// update menu language
-function updateMenu(language) {
+function updateLanguage(language) {
 
+
+    // update menu language
     menuTitle.innerHTML = '';
 
     for (let i = 0 ; i < menu.length ; i ++) {
@@ -18,41 +19,42 @@ function updateMenu(language) {
         menuTitle.innerHTML += htmlTitle
 
     }
-}
 
-function updateTitles(language) {
+    // update title language
     for (let i = 0; i < titles.length; i++) {
         const hTitle = document.getElementById(titles[i][0]);
-        hTitle.innerText = titles[i][language];
+        hTitle.innerHTML = titles[i][language];
     }
-}
 
-function updateSpanButtons(language) {
+
     for (let i = 0; i < buttons.length; i++) {
-    const spanButtons = document.getElementById(buttons[i][0]);
-    spanButtons.innerText = buttons[i][language];
+        // Select all span elements with the specific class within anchor tags
+        const spanButtons = document.querySelectorAll(`a span.${buttons[i][0]}`);
+        
+        // Iterate over each span element and update its inner text
+        spanButtons.forEach(span => {
+            span.innerText = buttons[i][language];
+        });
     }
+
 }
 
-updateMenu(1); // by default language = 1 sets language to English
 
 
 const englishButton = document.getElementById("englishBtn");
 
 englishButton.addEventListener("click", () => {
-    updateMenu(1);
-    updateTitles(1);
-    updateSpanButtons(1);
+    updateLanguage(1);
 })
 
 
 let frenchButton = document.getElementById("frenchBtn");
 
 frenchButton.addEventListener("click", () => {
-    updateMenu(2);
-    updateTitles(2);
-    updateSpanButtons(2);
+    updateLanguage(2);
 })
+
+updateLanguage(1);
 
 
 

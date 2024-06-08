@@ -13,7 +13,8 @@ const buttons = [
     ['readBio', 'Read my bio', 'Lire ma bio'],
     ['findMore', 'Find out more', 'Voir plus'],
     ['visitWebsite', 'Visit website', 'Visiter le site'],
-    ['submitForm', 'Submit', 'Envoyer']
+    ['submitForm', 'Submit', 'Envoyer'],
+    ['emailSend', 'Send an e-mail', 'Envoyer un mail']
 ];
 
 const titles = [
@@ -23,9 +24,9 @@ const titles = [
     ],
 
     ['h2Intro', 
-    `Welcome to my personal page where you'll find my skills, project and resume.
+    `Welcome to my personal page where you'll find my skills, project and resume.<br>
     Check my github, LinkedIn Page and feel free to  <a href="mailto:loris.buchelet@gmail.com">send me an e-mail</a>.`, 
-    `Bienvenue sur ma page personnelle : retrouvez mes compétences, projets et mon CV.
+    `Bienvenue sur ma page personnelle : retrouvez mes compétences, projets et mon CV.<br>
     Accédez à mon github, ma page LinkedIn et  <a href="mailto:loris.buchelet@gmail.com">contactez-moi par mail</a>.`
     ],
 
@@ -55,8 +56,8 @@ const titles = [
     ],
 
     ['h3Contact',
-    'Fill in this form or send me an e-mail.',
-    'Remplissez ce formulaire ou envoyez-moi un mail.'
+    'Send me an e-mail.',
+    'Envoyez-moi un mail.'
     ],
 ];
 
