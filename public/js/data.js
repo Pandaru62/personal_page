@@ -5,7 +5,7 @@ const menu = [
     ['#skills', 'Skills', 'Compétences'],
     ['#portfolio', 'Portfolio', 'Portfolio'],
     ['#contact', 'Contact', 'Me contacter'],
-    ['/CV_dev.pdf', 'Resume', 'Mon CV']
+    ['./CV_dev.pdf', 'Resume', 'Mon CV']
 ]
 
 const buttons = [
