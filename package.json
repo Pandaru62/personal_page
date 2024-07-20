@@ -1,17 +1,26 @@
 {
   "name": "personal_page",
   "version": "1.0.0",
-  "description": "",
+  "description": "personal portfolio",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Loris Buchelet",
   "license": "ISC",
   "dependencies": {
     "bootstrap": "^5.3.3",
     "express": "^4.19.2"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pandaru62/personal_page.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Pandaru62/personal_page/issues"
+  },
+  "homepage": "https://github.com/Pandaru62/personal_page#readme"
 }
