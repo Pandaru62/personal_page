@@ -5,6 +5,8 @@ const app = express();
 
 // Serve static files from the 'public' directory
 app.use(express.static(path.join(__dirname, 'public')));
+app.use('/assets', express.static(path.join(__dirname, 'assets')));
+app.use('/scss', express.static(path.join(__dirname, 'scss')));
 
 // Define a route for the home page
 app.get('/', (req, res) => {
