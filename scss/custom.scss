@@ -1,6 +1,6 @@
 // Custom.scss
 
-$primary: #fed60f;
+$primary: #aa31ba;
 $info: #feb20f;
 
 @import "../node_modules/bootstrap/scss/functions";
@@ -31,7 +31,7 @@ h2 {
 }
 
 #dynamicMenu li:hover {
-    background-color: #fed60f;
+    background-color: #aa31ba;
     border-radius: 20px;
 }
 
@@ -61,7 +61,7 @@ h2 {
     left: -10px;
     bottom: -10px;
     right:  -10px;
-    border: 10px #fed60f solid;
+    border: 10px #feb20f solid;
     border-bottom: 10px white solid;
     border-top: 10px white solid;
     border-radius: 50%;
@@ -78,5 +78,8 @@ h2 {
     }
 }
 
-// hover effect on skills progress bars
-
+.img-offcanva {
+    padding-top: 15px;
+    max-height: 70%;
+    width: auto;
+}

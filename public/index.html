@@ -4,14 +4,13 @@
     <meta charset="UTF-8">
     <title>Loris Buchelet - Page perso</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./scss/custom.min.css">
+    <link rel="stylesheet" href="../scss/custom.min.css">
     <!-- Bootstrap icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <!-- Font Awesome -->
-    <script src="https://kit.fontawesome.com/14273d579a.js" crossorigin="anonymous"></script>
+    <!-- JS -->
     <script defer src="js/data.js"></script>
     <script defer src="js/script.js"></script>
     
@@ -62,9 +61,10 @@
                         <h1 class="fw-bold" id="h1Intro">I'm Loris Buchelet, former English teacher and Web Developer in training.</h1>
                         <h3 class="fw-light" id="h2Intro">Welcome to my personal page where you'll find my skills, project and resume.<br>
                         Check my github, LinkedIn Page and feel free to send me an e-mail.</h3>
-                        <a class="btn btn-primary mt-3 pe-3" href="#skills"><span class="webSkills">My web skills</span></a>
-                        <a class="btn btn-outline-primary mt-3 disabled" href="/bio"><span class="readBio">Read my bio</span></a>
-
+                        <div class="d-flex justify-content-around">
+                            <a class="btn btn-primary mt-3 pe-3" href="#skills"><span class="webSkills">My web skills</span></a>
+                            <a class="btn btn-primary mt-3 pe-3" href="/bio"><span class="readBio">Read my bio</span></a>
+                        </div>
                     </div>
 
                     <div class="col-12 col-md-6 d-flex justify-content-center">
@@ -217,13 +217,13 @@
             <div class="container">
                 <h2 class="mb-0" id="h2Portfolio">My portfolio</h2>
                 <h3 class="fw-light fs-5" id="h3Portfolio">Personal and professional projects</h3>
-                <div class="row gy-4 gy-md-0 mt-4">
+                <div class="row row-cols-1 row-cols-lg-2 mt-3 g-3">
                     
                     <!-- Card project 1 -->
 
-                    <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="col">
                         <div class="card">
-                            <img src="img/logo_arcadia.png" class="card-img-top"  height="250px"  alt="Arcadia Zoo logo">
+                            <img src="/assets/screen_arcadia/logo_arcadia.png" class="card-img-top"  height="250px"  alt="Arcadia Zoo logo">
                             <div class="card-body">
                                     <h5 class="card-title fw-bold">Project 1: Arcadia Zoo</h5>
                                     <div class="my-2 d-flex align-items-center justify-content-around">
@@ -239,24 +239,23 @@
                                     </div>
                                         <p class="card-text">This project, designed for my Study graduate developer training, implements a zoo website with a login access to zoo employees.</p>
                                     <div class="my-2 d-flex align-items-center justify-content-around">
-                                        <a class="btn btn-outline-primary" data-bs-toggle="offcanvas" data-bs-target="#projectArcadiaInfo"
-                                        aria-controls="projectArcadiaInfo"><span class="findMore">Find out more</span></a>
+
+                                        <button class="btn btn-outline-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#projectArcadiaInfo" aria-controls="projectArcadiaInfo"><span class="findMore">Find out more</span></button>
                                         <a target=”_blank” class="btn btn-primary" href="https://github.com/Pandaru62/studi-arcadia.git"><i class="bi bi-github"></i> GitHub</a>
                                         <a target=”_blank” class="btn btn-primary" href="https://studi-arcadia-24b07c2af798.herokuapp.com/"><i class="bi bi-eye-fill"></i> <span class="visitWebsite">Visit website</span></a>
                                     </div>
                             </div>
-                            <div class="offcanvas offcanvas-bottom h-100" tabindex="-1" id="projectArcadiaInfo"
-                                 aria-labelledby="projectArcadia">
+                            <div class="offcanvas offcanvas-bottom h-100" tabindex="-1" id="projectArcadiaInfo" aria-labelledby="projectArcadia">
                                 <div class="offcanvas-header">
                                     <h5 class="offcanvas-title" id="projectArcadia">Project 1 / Arcadia Zoo</h5>
-                                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
-                                            aria-label="Close"></button>
+                                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">
+                                    </button>
                                 </div>
                                 <!-- Offcanvas content project 1 -->
                                 <div class="offcanvas-body">
-                                    <h2 class="text-center">Arcadia Zoo</h2>
-                                    <img class="img-fluid text-center" src="/assets/screen_arcadia/arcadialogo.png" alt=""><br>
-
+                                    <div class="d-flex justify-content-center">
+                                        <img class="img-fluid text-center" src="/assets/screen_arcadia/arcadialogo.png" alt="logo zoo arcadia">
+                                    </div>
                                     <h3>Description du projet :</h3>
                                     <p class="text-center">Le projet s'articule autour de la réalisation d'un site web responsive pour un zoo se situant dans la forêt de Brocéliande, en Bretagne. L'application web sert autant de site vitrine pour les visiteurs que d'outil pratique permettant de recenser les informations des animaux.
                                         Tout d'abord, côté visiteur, l'application doit adopter un design qui respecte les attentes de José, pour qui l'inscription du zoo dans une dynamique écologique et respectueuse de l'environnement est indispensable. De même, l'accent est porté sur les animaux et leur bien-être. Le client insiste en effet sur l'importance de l'accès aux informations sur l'alimentation et l'avis médical des animaux tant pour les visiteurs que les employés. Ainsi, depuis la barre de navigation, les visiteurs accèdent aux animaux par le biais des trois habitats proposés par le zoo (le marais, la jungle et la forêt). Enfin, les visiteurs doivent être en mesure de laisser des commentaires et contacter le zoo.
@@ -264,10 +263,11 @@
                                         En somme, en plus de refléter les belles valeurs du zoo aux yeux des visiteurs, José souhaite une application intuitive qui favorisera l'échange des données et la communication au sein de l'équipe.</p>
                                     
                                     <h3>Images :</h3>
-
-                                    <img class="img-fluid" src="/assets/screen_arcadia/arcadia1.png" alt=""><br>
-                                    <img class="img-fluid" src="/assets/screen_arcadia/arcadia2.png" alt=""><br>
-                                    <img class="img-fluid" src="/assets/screen_arcadia/arcadia3.png" alt=""><br>
+                                    <div class="d-flex flex-column justify-content-center">
+                                        <img class="img-fluid col img-offcanva" src="/assets/screen_arcadia/arcadia1.png" alt="">
+                                        <img class="img-fluid col img-offcanva" src="/assets/screen_arcadia/arcadia2.png" alt="">
+                                        <img class="img-fluid col img-offcanva" src="/assets/screen_arcadia/arcadia3.png" alt="">
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -275,9 +275,9 @@
 
                     <!-- Card project 2 -->
 
-                    <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="col">
                         <div class="card">
-                            <img src="img/survey-7046888_1280.jpg" class="card-img-top"  height="250px"  alt="...">
+                            <img src="/assets/screen_teachermarks/survey-7046888_1280.jpg" class="card-img-top"  height="250px"  alt="...">
                             <div class="card-body">
                                 <h5 class="card-title fw-bold">Project 2: TeacherMarks</h5>
                                 <div class="my-2 d-flex align-items-center justify-content-around">
@@ -293,7 +293,7 @@
                                 </div>
                                     <p class="card-text">This project, designed for my Study graduate developer training, implements a system for teachers to add and access students' skills.</p>
                                 <div class="my-2 d-flex align-items-center justify-content-around">
-                                    <button disabled class="btn btn-outline-primary" data-bs-toggle="offcanvas" data-bs-target="#projectTeacherTool"
+                                    <button class="btn btn-outline-primary" data-bs-toggle="offcanvas" data-bs-target="#projectTeacherToolInfo"
                                     aria-controls="projectTeacherTool"><span class="findMore">Find out more</span></button>
                                     <a target=”_blank” class="btn btn-primary" href="https://github.com/Pandaru62/teachermarksv1.git"><i class="bi bi-github"></i> GitHub</a>
                                     <a target=”_blank” class="btn btn-primary" href="https://teachermarks-c8dd6b3cae4b.herokuapp.com/"><i class="bi bi-eye-fill"></i> <span class="visitWebsite">Visit website</span></a>
@@ -308,8 +308,22 @@
                                 </div>
                                 <!-- Offcanvas content project 2 -->
                                 <div class="offcanvas-body">
-                                    <h2>Teacher Tool</h2>
-                                    <p>Wanna see more about the project? Come back later for more information.</p>
+                                    <div class="d-flex justify-content-center">
+                                        <img class="img-fluid text-center" src="/assets/screen_teachermarks/logo.png" alt="logo teachermarks">
+                                    </div>
+                                    <h3>Les attentes du client :</h3>
+                                    <p class="text-center">
+                                        Le client désire une application web qui lui permette d’entrer les  notes et les compétences des élèves de ses classes et ainsi accéder à des récapitulatifs par élève. Pour cette application web, le client souhaite une interface lui permettant de se connecter à un espace sécurisé à partir d’un pseudo et d’un mot de passe. Seul lui doit bénéficier de cette authentification., pas les élèves. Une fois authentifié, le professeur doit pouvoir ajouter des classes correspondant à des niveaux déjà configurés, des élèves pour chaque classe, ainsi que des évaluations. Chacune de ces composantes doivent répondre aux fonctionnalités de base du CRUD. 
+                                        Pour chaque évaluation, une ou plusieurs compétences peuvent être ajoutées. Ces compétences relatives au français, sont toujours les mêmes et n’ont pas besoin d’un intitulé modifiable. Toutefois, une évaluation peut correspondre à plusieurs compétences mais n’est rattachée qu’à une seule note chiffrée.
+                                        Il est indispensable que l’accès soit sécurisé. Le client souhaite bénéficier d’une connexion aussi bien sur un ordinateur que sur son téléphone personnel afin de pouvoir accéder à l’application sur son lieu de travail comme depuis son domicile. Lorsqu’il accède à la fiche d’un élève, le professeur souhaite avoir un récapitulatif de l’ensemble des évaluations de l’élève (chiffre de la compétence, note, trimestre …), et aussi, un tableau accompagné d’un diagramme araignée (ou diagramme radar) qui récapitule et fait la moyenne de chaque compétence pour chaque trimestre et l’ensemble de l’année.
+                                    </p>
+                                    
+                                    <h3>Images :</h3>
+                                    <div class="d-flex flex-column justify-content-center">
+                                        <img class="img-fluid col img-offcanva" src="/assets/screen_teachermarks/classes.png" alt="">
+                                        <img class="img-fluid col img-offcanva" src="/assets/screen_teachermarks/eval.png" alt="">
+                                        <img class="img-fluid col img-offcanva" src="/assets/screen_teachermarks/passeport.png" alt="">
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -317,9 +331,9 @@
                             
                     <!-- Card project 3 -->
 
-                    <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="col">
                         <div class="card">
-                            <img src="img/shinylucario.jpg" class="card-img-top" height="250px" alt="...">
+                            <img src="/assets/screen_shinycollector/shinypsyduck.jpg" class="card-img-top" height="250px" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title fw-bold">Project 3: Shiny Hunting</h5>
                                 <div class="my-2 d-flex align-items-center justify-content-around">
@@ -349,9 +363,10 @@
                                 </div>
                                 <!-- Offcanvas content project 3 -->
                                 <div class="offcanvas-body">
-                                    <h2 class="text-center">Shiny Collector</h2>
-                                    <img class="img-fluid" src="/assets/screen_shinycollector/shinycollectorlogo.png" alt=""><br>
-
+                                    <div class="d-flex justify-content-center">
+                                        <img class="img-fluid" src="/assets/screen_shinycollector/shinycollectorlogo.png" alt="">
+                                    </div>
+                                
                                     <h3>Description du projet :</h3>
                                     <p class="text-center">Ce projet (version 1) offre pour le moment la possibilité de rechercher des Pokémon à partir d'une API. Vous pouvez sélectionner des Pokémon chromatiques et les ajouter à votre collection tout en modifiant leur quantité.<br>
                                     Cette première version ne permet pas encore de se connecter pour sauvegarder sa collection sur une base de données.</p>
@@ -364,7 +379,63 @@
                         </div>
                     </div>
                     
+           
+
+                                        
+                    <!-- Card project 4 -->
+
+                    <div class="col">
+                        <div class="card">
+                            <img src="/assets/screen_plateformecours/logo.png" class="card-img-top" height="250px" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold">Project 4: Plateformecours</h5>
+                                <div class="my-2 d-flex align-items-center justify-content-around">
+                                    <div>
+                                        <i class="fab fa-html5 fa-2x me-3"></i>
+                                        <i class="fab fa-css3-alt fa-2x me-3"></i>
+                                        <i class="fab fa-js fa-2x me-3"></i>
+                                    </div>
+                                    <div>
+                                        <span class="p-1 bg-success text-light fw-bold rounded-3"><i class="bi bi-check-lg"></i> V1 available</span>
+                                    </div>
+                                </div>
+                                    <p class="card-text">This project, designed for my Study graduate developer training, is shaped like a Moodle for teachers to upload their lessons safely.</p>
+                                <div class="my-2 d-flex align-items-center justify-content-around">
+                                    <a class="btn btn-outline-primary" data-bs-toggle="offcanvas" data-bs-target="#projectPlateformeCours"
+                                    aria-controls="projectPlateformeCours"><span class="findMore">Find out more</span></a>
+                                    <a target=”_blank” href="https://github.com/Pandaru62/plateformecoursv1.git" class="btn btn-primary"><i class="bi bi-github"></i> GitHub</a>
+                                    <a target=”_blank” href="https://plateformecours-2e47a3fdfd36.herokuapp.com" class="btn btn-primary"><i class="bi bi-eye-fill"></i> Visit website</a>
+                               </div>
+                            </div>
+                            <div class="offcanvas offcanvas-bottom h-100" tabindex="-1" id="projectPlateformeCours"
+                                aria-labelledby="projectPlateformeCours">
+                                <div class="offcanvas-header">
+                                    <h5 class="offcanvas-title" id="projectPlateformeCours">Project 4 / PlateformeCours</h5>
+                                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                            aria-label="Close"></button>
+                                </div>
+                                <!-- Offcanvas content project 4 -->
+                                <div class="offcanvas-body">
+                                    <div class="d-flex justify-content-center">
+                                        <img class="img-fluid" src="/assets/screen_plateformecours/logo.png" alt="">
+                                    </div>
+                                
+                                    <h3>Attentes du client :</h3>
+                                    <p class="text-center">
+                                        Pour ce projet, le client souhaite avoir accès à une plateforme qui lui permette de mettre en ligne ses cours, sur le principe d’un Moodle. Après s’être authentifié de façon sécurisée, l’enseignant peut ainsi ajouter des séquences de cours, des séances et envoyer un ou plusieurs documents pour chacune des séances, qui seront mis à la disposition des élèves.
+                                        Concernant les élèves, le client souhaite qu’ils aient un compte pour accéder à la plateforme afin que ses cours ne soient pas totalement en libre accès. De plus, il veut qu’une séquence ne soit accessible que quand il le désire. A ce titre, un mot de passe d’accès à la séquence est requis la première fois, puis la séquence est ainsi débloquée indéfiniment après la saisie de ce mot de passe. Les séquences déverrouillées doivent être esthétiquement reconnaissables de celles qui sont verrouillées.
+                                        Enfin, comme une seule classe est pour le moment concernée par cette plateforme, il n’est pas utile de mettre en place un système de gestion de différentes classes.
+                                    </p>
+                                    
+                                    <h3>Images à venir</h3>
+                                    <img class="img-fluid" src="" alt=""><br>
+                                    <img class="img-fluid" src="" alt=""><br>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+                
             </div>
  
         </section>
@@ -400,7 +471,7 @@
                     </a>
                 </div>
                 <div class="col-12 col-md-4 text-md-center">
-                    Legal notice
+                    Last update: 07 August 2024
                 </div>
                 <div class="col-12 col-md-4 text-md-end">
                     <ul class="list-inline mb-0">
@@ -419,12 +490,8 @@
 
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"></script>
-    <script>
-        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
-        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    
 </body>
 </html>

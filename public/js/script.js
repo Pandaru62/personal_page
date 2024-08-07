@@ -1,29 +1,45 @@
 
-// retrives the links from the navbar
-const menuTitle = document.querySelector("#dynamicMenu");
+document.addEventListener('DOMContentLoaded', () => {
+    // Tooltip initialization
+    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+    const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+
+    // Example autofocus logic
+    const searchInput = document.getElementById('searchInput');
+    if (searchInput) {
+        searchInput.focus();
+    }
+});
+
 
 function updateLanguage(language) {
 
+    // retrives the links from the navbar
+    if(document.querySelector("#dynamicMenu")) {
+        const menuTitle = document.querySelector("#dynamicMenu");
 
     // update menu language
-    menuTitle.innerHTML = '';
+        menuTitle.innerHTML = '';
 
-    for (let i = 0 ; i < menu.length ; i ++) {
+        for (let i = 0 ; i < menu.length ; i ++) {
 
-        const htmlTitle = 
-        `<li class="nav-item">
-        <a href="${menu[i][0]}" class="nav-link">${menu[i][language]}</a>
-        </li>`
+            const htmlTitle = 
+            `<li class="nav-item">
+            <a href="${menu[i][0]}" class="nav-link">${menu[i][language]}</a>
+            </li>`
 
-        // adds as many buttons as exist in the data.js menu array
-        menuTitle.innerHTML += htmlTitle
+            // adds as many buttons as exist in the data.js menu array
+            menuTitle.innerHTML += htmlTitle
 
+        }
     }
 
     // update title language
     for (let i = 0; i < titles.length; i++) {
-        const hTitle = document.getElementById(titles[i][0]);
-        hTitle.innerHTML = titles[i][language];
+        if(document.getElementById(titles[i][0])) {
+            const hTitle = document.getElementById(titles[i][0]);
+            hTitle.innerHTML = titles[i][language];
+        }
     }
 
 
@@ -35,6 +51,12 @@ function updateLanguage(language) {
         spanButtons.forEach(span => {
             span.innerText = buttons[i][language];
         });
+    }
+
+    //update bio language on bio.html 
+    if(document.getElementById('bio-text')) {
+        const bioText = document.getElementById('bio-text');
+        bioText.innerHTML = bio[language];
     }
 
 }
